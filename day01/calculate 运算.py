@@ -54,7 +54,10 @@ z //= 10
 print(z)
 print(z % 10)
 
-
+#dgfhfjjffkvk
+#sjjdkmcdkfdkf
+#ajsnsdsdjj
+#skdskdmfm
 
 
 
