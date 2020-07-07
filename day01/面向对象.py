@@ -139,7 +139,7 @@
 #         super().__init__(a)
 #
 #     def skill(self):
-#         print('吃喝玩乐2566')# 方法重写
+#         print('撸羊毛')# 方法重写
 #         super().skill()
 #
 # m = Man(123)
