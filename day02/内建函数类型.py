@@ -34,11 +34,11 @@
 # print(set(a))
 
 #读取字符串
-# a = 'abcdefghijklmnop'
+a = 'abcdefghijklmnop'
 #print(a[0])
 #print(a[2:-1])
 #print(a[3:-2:2])
-# print(a[-1:1:-1])
+print(a[-1:1:-1])
 
 #前后去空格
 # s ='   aaa www  '

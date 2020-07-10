@@ -235,39 +235,40 @@ continue 跳过本次循环
 # 实例变量
 # 局部变量
 
-class calc():
-    res = None # 类的所有实例共享
+# class calc():
+#     res = None # 类的所有实例共享
+#
+#     def __init__(self,a,b): # 魔法函数，类实例化的时候调用，又称构造方法
+#         self.a=a # 实例变量，只有当前对象可用
+#         self.b=b
+#         c = 10
+#
+#     def sum(self): # 实例方法
+#         self.c = 10
+#         self.res = self.a + self.b
+#
+#     def div(self):
+#         self.res = self.a / self.b
+#
+#     def get_result(self):
+#         print(self.res)
+#
+#     @classmethod
+#     def get_res(cls): # 类方法定义：必须添加名字为@classmethod的装饰器，第一个参数名 cls cls代表当前类本身
+#         print(cls.res)
+#
+#     @staticmethod
+#     def static(): # 静态方法定义：必须使用@staticmethod装饰器，无默认参数
+#         print("我是静态方法")
+#
+#
+#
+# c = calc(29,39) # 通过对象去操作实例变量
+# c.a = 100
+# print(c.a)
+#
+# calc.res = 1000 # 通过类名去操作类变量
+# calc.get_res() # 类方法在使用的时候，通过类名调用。不需要实例化
+#
+# calc.static() # 通过类名调用
 
-    def __init__(self,a,b): # 魔法函数，类实例化的时候调用，又称构造方法
-        self.a=a # 实例变量，只有当前对象可用
-        self.b=b
-        c = 10
-
-    def sum(self): # 实例方法
-        self.c = 10
-        self.res = self.a + self.b
-
-    def div(self):
-        self.res = self.a / self.b
-
-    def get_result(self):
-        print(self.res)
-
-    @classmethod
-    def get_res(cls): # 类方法定义：必须添加名字为@classmethod的装饰器，第一个参数名 cls cls代表当前类本身
-        print(cls.res)
-
-    @staticmethod
-    def static(): # 静态方法定义：必须使用@staticmethod装饰器，无默认参数
-        print("我是静态方法")
-
-
-
-c = calc(29,39) # 通过对象去操作实例变量
-c.a = 100
-print(c.a)
-
-calc.res = 1000 # 通过类名去操作类变量
-calc.get_res() # 类方法在使用的时候，通过类名调用。不需要实例化
-
-calc.static() # 通过类名调用
